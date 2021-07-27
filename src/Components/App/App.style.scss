@@ -1,0 +1,35 @@
+@import "reset-css";
+
+* {
+  box-sizing: border-box;
+}
+// scrollbar
+*::-webkit-scrollbar {
+  width: 0.7rem;
+}
+*::-webkit-scrollbar-track {
+  background: #eee;
+}
+*::-webkit-scrollbar-thumb {
+  background: #999;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #666;
+}
+
+body {
+  background-color: #e8edf1;
+  color: #081d2e;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.app {
+  max-width: 1360px;
+  width: 95%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
