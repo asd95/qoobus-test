@@ -1,28 +1,23 @@
 // React
-import React from 'react';
+import React from "react";
 // Routing
 import { Route, Switch } from "react-router-dom";
 // Pages
-import SignUp from '../../Pages/SignUp/SignUp';
+import SignUp from "../../Pages/SignUp/SignUp";
+import SignIn from "../../Pages/Signin/SignIn";
 // Components
-import Header from '../Header/Header';
+import Header from "../Header/Header";
 
 // styles
-import './App.style.scss';
+import "./App.style.scss";
 
-const App = ()=> {
+const App = () => {
   return (
     <div className="app">
       <Header />
       <Switch>
         <Route path="/" exact component={SignUp} />
-        <Route
-          path="/SignIn"
-          exact
-          render={() => {
-            return <h1>Sign In</h1>;
-          }}
-        />
+        <Route path="/SignIn" exact component={SignIn} />
         <Route
           path="/Home"
           exact
@@ -33,6 +28,6 @@ const App = ()=> {
       </Switch>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,5 +1,6 @@
 const initialState = {
-    signUp: {}
+    signUp: {},
+    signIn: {},
 }
 
 const rootReducers = (state = initialState, action) => {
@@ -7,11 +8,15 @@ const rootReducers = (state = initialState, action) => {
       case "ON_SIGNUP":
         return {
           ...state,
-          signUp: action.payload
-        }
-    
+          signUp: action.payload,
+        };
+      case "ON_SIGNIN":
+        return {
+          ...state,
+          signIn: action.payload,
+        };
       default:
-        return state
+        return state;
     }
 }
 
