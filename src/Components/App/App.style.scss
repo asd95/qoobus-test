@@ -19,17 +19,15 @@
 *::-webkit-scrollbar-thumb:active {
   background-color: #666;
 }
-
-body {
-  background-color: #e8edf1;
-  color: #081d2e;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
+:root {
+  font-size: 1rem;
 }
 
 .app {
+  width: 100%;
   max-width: 1360px;
-  width: 95%;
-  margin: 0 auto;
   min-height: 100vh;
+  background-color: #e8edf1;
+  color: #081d2e;
+  font-family: "Roboto", sans-serif;
 }

@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 // Pages
 import SignUp from "../../Pages/SignUp/SignUp";
 import SignIn from "../../Pages/Signin/SignIn";
+import Home from "../../Pages/Home/Home";
 // Components
 import Header from "../Header/Header";
 
@@ -17,14 +18,8 @@ const App = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={SignUp} />
-        <Route path="/SignIn" exact component={SignIn} />
-        <Route
-          path="/Home"
-          exact
-          render={() => {
-            return <h1>HOME PAGE</h1>;
-          }}
-        />
+        <Route path="/signIn" exact component={SignIn} />
+        <Route path="/home" exact component={Home} />
       </Switch>
     </div>
   );
