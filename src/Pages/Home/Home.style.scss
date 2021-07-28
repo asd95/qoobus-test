@@ -1,26 +1,31 @@
 .home {
-    max-width: 90%;
-    margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .home__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
 
-    .home__title {
-        align-self: start;
-        font-size: 1.5rem;
-        font-weight: 600;
-        font-family: 'Montserrat';
-        color: #673ab7;
-        margin-bottom: 1rem;
-    }
+  .home__title {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #673ab7;
+    align-self: center;
+  }
 
-    .home__subtitle {
-        margin-bottom: .3em;
-    }
+  .home__subtitle {
+    margin-bottom: 0.3em;
+  }
 
-    .chart {
-        max-width: 480px;
-        text-align: center;
-    }
+  .chart {
+    max-width: 480px;
+    text-align: center;
+    align-self: center;
+  }
 }

@@ -1,7 +1,7 @@
 // React
 import React, { useState, useEffect } from "react";
 // Router
-import { Link, Redirect, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 // validation form
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -82,10 +82,6 @@ const SignUp = () => {
     dispatch(onSignIn(data));
     history.push("/home");
   };
-
-  if (!Object.keys(state.signUp).length === 0) {
-    return <Redirect to="/" />;
-  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
